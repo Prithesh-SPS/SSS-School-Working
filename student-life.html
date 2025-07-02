@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life - Springs Secondary School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'school-blue': '#1e40af',
+                        'school-yellow': '#fbbf24',
+                        'school-navy': '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-16 w-16">
+                    <span class="ml-3 text-xl font-bold text-school-navy">Springs Secondary School</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-school-blue transition duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-school-blue transition duration-300">About Us</a>
+                        <a href="academics.html" class="text-gray-700 hover:text-school-blue transition duration-300">Academics</a>
+                        <a href="admissions.html" class="text-gray-700 hover:text-school-blue transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="text-school-blue font-semibold hover:text-school-yellow transition duration-300">Student Life</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-school-blue">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">About Us</a>
+                <a href="academics.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Academics</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Admissions</a>
+                <a href="student-life.html" class="block px-3 py-2 text-school-blue font-semibold">Student Life</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-school-blue text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-6">Student Life</h1>
+            <p class="text-xl">Beyond the Classroom - Where Memories Are Made</p>
+        </div>
+    </section>
+
+    <!-- Sports Program -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Sports Program</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Our Sports Philosophy</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        At Springs Secondary School, we believe sports are integral to developing well-rounded individuals. Our comprehensive sports program promotes physical fitness, teamwork, discipline, and leadership skills that extend far beyond the playing field.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We encourage all students to participate in sports activities, whether competitively or recreationally, fostering a lifelong appreciation for health and fitness.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Available Sports</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Soccer</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Rugby</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Cricket</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Basketball</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Netball</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Athletics</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Swimming</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Tennis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Affiliations -->
+            <div class="bg-school-blue text-white rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-6">Sports Affiliations</h3>
+                <p class="text-lg mb-4">We are proud members of several sports organizations:</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Regional Schools Sports Association</h4>
+                        <p class="text-sm text-gray-100">Competing at district and provincial levels</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Gauteng Schools Rugby Union</h4>
+                        <p class="text-sm text-gray-100">Excellence in rugby development</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Schools Athletics Federation</h4>
+                        <p class="text-sm text-gray-100">Track and field competitions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excursions & Events -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Excursions & Events</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Educational Excursions</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-school-yellow pl-4">
+                            <h4 class="font-semibold text-lg">Science Museum Visits</h4>
+                            <p class="text-gray-600">Interactive learning experiences in science and technology</p>
+                        </div>
+                        <div class="border-l-4 border-school-yellow pl-4">
+                            <h4 class="font-semibold text-lg">Historical Site Tours</h4>
+                            <p class="text-gray-600">Connecting classroom learning with real-world heritage</p>
+                        </div>
+                        <div class="border-l-4 border-school-yellow pl-4">
+                            <h4 class="font-semibold text-lg">Nature Conservation Trips</h4>
+                            <p class="text-gray-600">Environmental awareness and outdoor education</p>
+                        </div>
+                        <div class="border-l-4 border-school-yellow pl-4">
+                            <h4 class="font-semibold text-lg">University Campus Visits</h4>
+                            <p class="text-gray-600">Preparing students for higher education pathways</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Annual Events</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-school-blue pl-4">
+                            <h4 class="font-semibold text-lg">Academic Awards Ceremony</h4>
+                            <p class="text-gray-600">Celebrating student achievements and excellence</p>
+                        </div>
+                        <div class="border-l-4 border-school-blue pl-4">
+                            <h4 class="font-semibold text-lg">Sports Day</h4>
+                            <p class="text-gray-600">Inter-house competitions and athletic celebrations</p>
+                        </div>
+                        <div class="border-l-4 border-school-blue pl-4">
+                            <h4 class="font-semibold text-lg">Cultural Festival</h4>
+                            <p class="text-gray-600">Showcasing diversity and artistic talents</p>
+                        </div>
+                        <div class="border-l-4 border-school-blue pl-4">
+                            <h4 class="font-semibold text-lg">Matric Farewell</h4>
+                            <p class="text-gray-600">Celebrating our graduating class</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trip Information -->
+            <div class="bg-white rounded-lg p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-school-blue mb-6">Trip Information</h3>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our excursions are carefully planned educational experiences that complement classroom learning. All trips are supervised by qualified staff and include comprehensive safety measures.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Safety First</h4>
+                        <p class="text-gray-600">Comprehensive safety protocols and qualified supervision</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Educational Value</h4>
+                        <p class="text-gray-600">Every trip directly supports curriculum objectives</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Inclusive</h4>
+                        <p class="text-gray-600">Accessible to all students with financial assistance available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Gallery</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Capturing moments of growth, achievement, and joy</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="/lovable-uploads/d3c4abd3-4f28-4de7-ae07-c1e334ef3c8a.png" alt="Honor Students" class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h3 class="text-2xl font-bold mb-2">Academic Excellence</h3>
+                        <p class="text-lg">Celebrating our top-performing students and their achievements in academics</p>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="/lovable-uploads/65a0374b-bc21-4d50-8786-aad254f10eac.png" alt="Students" class="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h3 class="text-2xl font-bold mb-2">Student Life</h3>
+                        <p class="text-lg">Everyday moments that make Springs Secondary School special</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-school-blue mb-8">More Memories</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Sports Day 2024</span>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Science Fair</span>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Cultural Festival</span>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Graduation 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="py-16 bg-school-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Important Links</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm hover:bg-white/20 transition duration-300 cursor-pointer">
+                    <div class="bg-school-yellow rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-school-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">News Letters</h3>
+                    <p class="text-gray-100 mb-4">Stay updated with our monthly newsletters featuring school news, achievements, and upcoming events.</p>
+                    <a href="#" class="text-school-yellow font-semibold hover:underline">View Latest Newsletter →</a>
+                </div>
+
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm hover:bg-white/20 transition duration-300 cursor-pointer">
+                    <div class="bg-school-yellow rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-school-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Principal's Pen</h3>
+                    <p class="text-gray-100 mb-4">Read inspiring messages and updates from our principal about school life, achievements, and future plans.</p>
+                    <a href="#" class="text-school-yellow font-semibold hover:underline">Read Latest Message →</a>
+                </div>
+
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm hover:bg-white/20 transition duration-300 cursor-pointer">
+                    <div class="bg-school-yellow rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-school-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Code of Conduct</h3>
+                    <p class="text-gray-100 mb-4">Access our comprehensive code of conduct outlining expectations for behavior and academic integrity.</p>
+                    <a href="#" class="text-school-yellow font-semibold hover:underline">View Code of Conduct →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-school-navy text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-12 w-12">
+                        <span class="ml-3 text-xl font-bold">Springs Secondary School</span>
+                    </div>
+                    <p class="text-gray-300">Knowledge Spreads Light</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 123 Education Avenue, Springs, Gauteng</p>
+                        <p>📞 +27 11 123 4567</p>
+                        <p>✉️ info@springssecondary.edu.za</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">About Us</a>
+                        <a href="academics.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Academics</a>
+                        <a href="admissions.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-600 text-center text-gray-300">
+                <p>&copy; 2024 Springs Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

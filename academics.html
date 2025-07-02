@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Springs Secondary School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'school-blue': '#1e40af',
+                        'school-yellow': '#fbbf24',
+                        'school-navy': '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-16 w-16">
+                    <span class="ml-3 text-xl font-bold text-school-navy">Springs Secondary School</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-school-blue transition duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-school-blue transition duration-300">About Us</a>
+                        <a href="academics.html" class="text-school-blue font-semibold hover:text-school-yellow transition duration-300">Academics</a>
+                        <a href="admissions.html" class="text-gray-700 hover:text-school-blue transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="text-gray-700 hover:text-school-blue transition duration-300">Student Life</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-school-blue">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">About Us</a>
+                <a href="academics.html" class="block px-3 py-2 text-school-blue font-semibold">Academics</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Admissions</a>
+                <a href="student-life.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Student Life</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-school-blue text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-6">Academics</h1>
+            <p class="text-xl">Excellence in Education Through Comprehensive Learning</p>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Our Curriculum</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- English -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
+                    <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-school-navy mb-4">English</h3>
+                    <p class="text-gray-700 mb-4">Our English program focuses on developing critical reading, writing, and communication skills. Students engage with diverse literature and develop analytical thinking.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Literature Analysis</li>
+                        <li>• Creative Writing</li>
+                        <li>• Public Speaking</li>
+                        <li>• Media Studies</li>
+                    </ul>
+                </div>
+
+                <!-- Mathematics -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
+                    <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-school-navy mb-4">Mathematics</h3>
+                    <p class="text-gray-700 mb-4">Our comprehensive mathematics curriculum builds strong foundational skills and advanced problem-solving abilities for future success.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Algebra & Geometry</li>
+                        <li>• Statistics & Probability</li>
+                        <li>• Calculus</li>
+                        <li>• Applied Mathematics</li>
+                    </ul>
+                </div>
+
+                <!-- Natural Science -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
+                    <div class="bg-school-blue rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-school-navy mb-4">Natural Science</h3>
+                    <p class="text-gray-700 mb-4">Hands-on laboratory experiences and theoretical knowledge combine to foster scientific inquiry and understanding of the natural world.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Physics</li>
+                        <li>• Chemistry</li>
+                        <li>• Biology</li>
+                        <li>• Environmental Science</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Subjects -->
+            <div class="bg-gray-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-school-navy mb-6">Additional Subjects</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <h4 class="font-semibold text-school-blue mb-2">History</h4>
+                        <p class="text-gray-600 text-sm">Understanding our past to shape our future</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-semibold text-school-blue mb-2">Geography</h4>
+                        <p class="text-gray-600 text-sm">Exploring our world and environment</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-semibold text-school-blue mb-2">Business Studies</h4>
+                        <p class="text-gray-600 text-sm">Building entrepreneurial skills</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-semibold text-school-blue mb-2">Technology</h4>
+                        <p class="text-gray-600 text-sm">Preparing for the digital future</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IEB Adult Education -->
+    <section class="py-16 bg-school-blue text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-8">IEB Adult Education and Training Examinations</h2>
+            <p class="text-xl text-center mb-8">
+                We are proud to offer IEB Adult Education and Training (AET) examinations for adult learners seeking to complete their secondary education.
+            </p>
+            <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                <h3 class="text-2xl font-bold mb-4">Program Features</h3>
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Flexible learning schedules for working adults
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Nationally recognized IEB certification
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Experienced adult education instructors
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Support services for adult learners
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessments & Homework -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Assessments & Homework</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Assessment Methods</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <strong>Continuous Assessment:</strong> Regular tests and assignments throughout the term
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <strong>Project-Based Learning:</strong> Practical applications of theoretical knowledge
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <strong>Formal Examinations:</strong> Quarterly and annual examinations
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Homework Policy</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <div>
+                                <strong>Daily Assignments:</strong> Reinforcement of classroom learning
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <div>
+                                <strong>Research Projects:</strong> Developing independent learning skills
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 mt-1 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <div>
+                                <strong>Study Support:</strong> After-school assistance programs available
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-school-navy text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-12 w-12">
+                        <span class="ml-3 text-xl font-bold">Springs Secondary School</span>
+                    </div>
+                    <p class="text-gray-300">Knowledge Spreads Light</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 123 Education Avenue, Springs, Gauteng</p>
+                        <p>📞 +27 11 123 4567</p>
+                        <p>✉️ info@springssecondary.edu.za</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">About Us</a>
+                        <a href="academics.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Academics</a>
+                        <a href="admissions.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-600 text-center text-gray-300">
+                <p>&copy; 2024 Springs Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

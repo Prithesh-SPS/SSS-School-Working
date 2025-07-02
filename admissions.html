@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Springs Secondary School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'school-blue': '#1e40af',
+                        'school-yellow': '#fbbf24',
+                        'school-navy': '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-16 w-16">
+                    <span class="ml-3 text-xl font-bold text-school-navy">Springs Secondary School</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-school-blue transition duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-school-blue transition duration-300">About Us</a>
+                        <a href="academics.html" class="text-gray-700 hover:text-school-blue transition duration-300">Academics</a>
+                        <a href="admissions.html" class="text-school-blue font-semibold hover:text-school-yellow transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="text-gray-700 hover:text-school-blue transition duration-300">Student Life</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-school-blue">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">About Us</a>
+                <a href="academics.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Academics</a>
+                <a href="admissions.html" class="block px-3 py-2 text-school-blue font-semibold">Admissions</a>
+                <a href="student-life.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Student Life</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-school-blue text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-6">Admissions</h1>
+            <p class="text-xl">Join Our Community of Excellence</p>
+        </div>
+    </section>
+
+    <!-- Enrollment Process -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Enrollment Process</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- New Students -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">New Students</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-school-blue text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">1</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Application Submission</h4>
+                                <p class="text-gray-600">Complete and submit the application form with all required documents</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-blue text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">2</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Assessment</h4>
+                                <p class="text-gray-600">Attend placement assessment and interview</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-blue text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">3</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Acceptance</h4>
+                                <p class="text-gray-600">Receive acceptance letter and enrollment instructions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-blue text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">4</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Registration</h4>
+                                <p class="text-gray-600">Complete registration and fee payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Existing Students -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Existing Students</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-school-yellow text-school-navy rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">1</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Re-enrollment Form</h4>
+                                <p class="text-gray-600">Complete the annual re-enrollment form</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-yellow text-school-navy rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">2</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Academic Review</h4>
+                                <p class="text-gray-600">Academic progress review and subject selection</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-yellow text-school-navy rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">3</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Fee Payment</h4>
+                                <p class="text-gray-600">Complete annual fee payment process</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-school-yellow text-school-navy rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 text-sm font-bold">4</div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Confirmation</h4>
+                                <p class="text-gray-600">Receive class schedule and confirmation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Required Documents -->
+            <div class="bg-school-blue text-white rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-6">Required Documents</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">For New Students:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Completed application form
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Certified copy of birth certificate
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Previous school reports
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Transfer/clearance certificate
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Passport-size photographs
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Additional Requirements:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Proof of residence
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Parent/Guardian ID copies
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Medical records/immunization certificate
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Proof of income (for fee assessment)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Fees -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">School Fees</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Fee Structure -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Annual Fee Structure</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="font-semibold">Grade 8-9</span>
+                            <span class="text-school-blue font-bold">R 15,000</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="font-semibold">Grade 10-12</span>
+                            <span class="text-school-blue font-bold">R 18,000</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="font-semibold">Registration Fee</span>
+                            <span class="text-school-blue font-bold">R 1,500</span>
+                        </div>
+                        <div class="mt-4 p-4 bg-gray-50 rounded">
+                            <p class="text-sm text-gray-600">
+                                <strong>Note:</strong> Fees include tuition, textbooks, and basic stationery. Additional fees may apply for special programs and activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Plans -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Payment Options</h3>
+                    <div class="space-y-4">
+                        <div class="border-2 border-school-yellow rounded-lg p-4">
+                            <h4 class="font-semibold text-lg mb-2">Annual Payment</h4>
+                            <p class="text-gray-600 mb-2">Pay full amount by January 31st</p>
+                            <p class="text-school-blue font-bold">5% Discount Applied</p>
+                        </div>
+                        <div class="border-2 border-gray-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-lg mb-2">Quarterly Payment</h4>
+                            <p class="text-gray-600 mb-2">Four equal payments per year</p>
+                            <p class="text-gray-500">Due: Jan, Apr, Jul, Oct</p>
+                        </div>
+                        <div class="border-2 border-gray-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-lg mb-2">Monthly Payment</h4>
+                            <p class="text-gray-600 mb-2">Spread over 10 months</p>
+                            <p class="text-gray-500">February - November</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banking Details -->
+            <div class="bg-white rounded-lg p-8 shadow-lg mb-8">
+                <h3 class="text-2xl font-bold text-school-blue mb-6">Banking Details</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="space-y-3 text-gray-700">
+                            <div class="flex">
+                                <span class="font-semibold w-32">Bank:</span>
+                                <span>First National Bank</span>
+                            </div>
+                            <div class="flex">
+                                <span class="font-semibold w-32">Account Name:</span>
+                                <span>Springs Secondary School</span>
+                            </div>
+                            <div class="flex">
+                                <span class="font-semibold w-32">Account No:</span>
+                                <span>123 456 789</span>
+                            </div>
+                            <div class="flex">
+                                <span class="font-semibold w-32">Branch Code:</span>
+                                <span>250 655</span>
+                            </div>
+                            <div class="flex">
+                                <span class="font-semibold w-32">Reference:</span>
+                                <span>Student Name & Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Online Payment Gateway</h4>
+                        <p class="text-gray-600 mb-4">Secure online payments available through our payment portal</p>
+                        <button class="bg-school-blue text-white px-6 py-3 rounded-lg hover:bg-school-navy transition duration-300">
+                            Pay Online (Coming Soon)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uniform Requirements -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Uniform Requirements</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Summer Uniform -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Summer Uniform</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            White short-sleeve shirt
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Navy blue shorts/skirt
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            School tie
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Navy blue socks
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Black school shoes
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Winter Uniform -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Winter Uniform</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            White long-sleeve shirt
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Navy blue trousers/skirt
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            School jersey/blazer
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            School tie
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Black school shoes
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sports Attire -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-6">Sports Attire</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            School sports shirt
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Navy blue shorts
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            White sports socks
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Sports shoes
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-school-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            School tracksuit (optional)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grooming Standards -->
+            <div class="bg-school-blue text-white rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-6">Grooming Standards</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">General Guidelines:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Hair must be neat and tidy
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Natural hair colors only
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Minimal makeup allowed (Grades 10-12)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-school-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Small stud earrings only (girls)
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Not Permitted:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Extreme hairstyles or colors
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Visible tattoos or piercings
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Excessive jewelry
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                Nail extensions or bright colors
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-school-navy text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-12 w-12">
+                        <span class="ml-3 text-xl font-bold">Springs Secondary School</span>
+                    </div>
+                    <p class="text-gray-300">Knowledge Spreads Light</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 123 Education Avenue, Springs, Gauteng</p>
+                        <p>📞 +27 11 123 4567</p>
+                        <p>✉️ info@springssecondary.edu.za</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">About Us</a>
+                        <a href="academics.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Academics</a>
+                        <a href="admissions.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-600 text-center text-gray-300">
+                <p>&copy; 2024 Springs Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

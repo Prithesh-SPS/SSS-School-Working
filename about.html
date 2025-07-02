@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Springs Secondary School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'school-blue': '#1e40af',
+                        'school-yellow': '#fbbf24',
+                        'school-navy': '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-16 w-16">
+                    <span class="ml-3 text-xl font-bold text-school-navy">Springs Secondary School</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-school-blue transition duration-300">Home</a>
+                        <a href="about.html" class="text-school-blue font-semibold hover:text-school-yellow transition duration-300">About Us</a>
+                        <a href="academics.html" class="text-gray-700 hover:text-school-blue transition duration-300">Academics</a>
+                        <a href="admissions.html" class="text-gray-700 hover:text-school-blue transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="text-gray-700 hover:text-school-blue transition duration-300">Student Life</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-school-blue">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-school-blue font-semibold">About Us</a>
+                <a href="academics.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Academics</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Admissions</a>
+                <a href="student-life.html" class="block px-3 py-2 text-gray-700 hover:text-school-blue">Student Life</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="relative h-64 bg-school-blue">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <img src="/lovable-uploads/14539808-fa3c-4c8f-92ea-29d8e39f8798.png" alt="Springs Secondary School Banner" class="w-full h-full object-cover mix-blend-overlay">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-5xl font-bold text-white">About Us</h1>
+        </div>
+    </section>
+
+    <!-- Welcome Message -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-school-navy mb-6">Welcome Message</h2>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Welcome to Springs Secondary School, where "Knowledge Spreads Light" is not just our motto, but our guiding principle. As the principal of this esteemed institution, I am honored to lead a community dedicated to academic excellence, character development, and the holistic growth of every student.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Our school stands as a beacon of quality education, where we nurture young minds to become responsible global citizens. We believe that education is the foundation upon which dreams are built and futures are secured.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I invite you to explore our programs, meet our dedicated staff, and discover the opportunities that await your child at Springs Secondary School.
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-semibold text-school-navy">Mrs. Sarah Johnson</p>
+                        <p class="text-gray-600">Principal, Springs Secondary School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-3xl font-bold text-school-navy mb-6">Our Vision</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To be a leading educational institution that empowers learners to reach their full potential, fostering innovation, critical thinking, and moral excellence. We envision a school community where every student is inspired to become a lifelong learner and a positive contributor to society.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-3xl font-bold text-school-navy mb-6">Our Mission</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To provide quality education that develops the intellectual, physical, social, emotional, and moral aspects of our learners. We are committed to creating a nurturing environment that prepares students to be responsible citizens and successful individuals in an ever-changing global society.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth & History -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-school-navy text-center mb-12">Growth & History</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-4">Our Foundation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Springs Secondary School was established with a vision to provide exceptional education to the community. From our humble beginnings, we have grown into a institution recognized for academic excellence and character development.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-4">Continuous Growth</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Over the years, we have expanded our facilities, enhanced our curriculum, and strengthened our community partnerships. Our commitment to innovation in education has led to the integration of modern teaching methodologies and technology in the classroom.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-school-blue mb-4">Looking Forward</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        As we continue to evolve, we remain steadfast in our commitment to educational excellence. We look forward to building upon our legacy while adapting to meet the changing needs of our students and community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Culture & Values -->
+    <section class="py-16 bg-school-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Culture & Values</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Perseverance</h3>
+                    <p class="text-gray-100">We instill the value of persistence and determination, teaching our students to overcome challenges and never give up on their dreams.</p>
+                </div>
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Tolerance</h3>
+                    <p class="text-gray-100">We celebrate diversity and promote understanding, respect, and acceptance among all members of our school community.</p>
+                </div>
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Integrity</h3>
+                    <p class="text-gray-100">We uphold the highest standards of honesty, ethics, and moral conduct in all our interactions and decisions.</p>
+                </div>
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Excellence</h3>
+                    <p class="text-gray-100">We strive for the highest quality in all aspects of education, encouraging students to reach their full potential.</p>
+                </div>
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Responsibility</h3>
+                    <p class="text-gray-100">We develop accountable individuals who take ownership of their actions and contribute positively to society.</p>
+                </div>
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-4">Innovation</h3>
+                    <p class="text-gray-100">We embrace creativity and forward-thinking approaches to prepare students for the challenges of tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-school-navy text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/lovable-uploads/2d604ffc-7ae7-4f77-8b84-030336d9701c.png" alt="Springs Secondary School Logo" class="h-12 w-12">
+                        <span class="ml-3 text-xl font-bold">Springs Secondary School</span>
+                    </div>
+                    <p class="text-gray-300">Knowledge Spreads Light</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📍 123 Education Avenue, Springs, Gauteng</p>
+                        <p>📞 +27 11 123 4567</p>
+                        <p>✉️ info@springssecondary.edu.za</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="about.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">About Us</a>
+                        <a href="academics.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Academics</a>
+                        <a href="admissions.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Admissions</a>
+                        <a href="student-life.html" class="block text-gray-300 hover:text-school-yellow transition duration-300">Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-600 text-center text-gray-300">
+                <p>&copy; 2024 Springs Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
