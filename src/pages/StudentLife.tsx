@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 
 const StudentLife = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-96 bg-gradient-to-r from-primary to-primary/80">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -232,7 +232,7 @@ const StudentLife = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

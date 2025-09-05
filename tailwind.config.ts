@@ -19,6 +19,9 @@ export default {
 		},
 		extend: {
 			colors: {
+				'school-blue': '#1e40af',
+        		'school-yellow': '#fbbf24',
+        		'school-navy': '#1e3a8a',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
