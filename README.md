@@ -1,4 +1,4 @@
-**Use your preferred IDE WTFFFFFF**
+**Use your preferred IDE WTFFFFFF1**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
