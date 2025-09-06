@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 
 const About = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Banner */}
       <section className="relative h-96 bg-gradient-to-r from-primary to-primary/80">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -120,7 +120,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

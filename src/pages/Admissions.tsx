@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 
 const Admissions = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-96 bg-gradient-to-r from-primary to-primary/80">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -240,7 +240,7 @@ const Admissions = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
